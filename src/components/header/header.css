@@ -4,11 +4,12 @@
   top: 0;
   left: 0;
   width: 100%;
+  text-align: center;
   z-index: 1000;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem; /* Make header thinner */
-  box-shadow: none; /* Remove any box shadow */
+  padding: 0.2rem 1rem; /* Reduced padding for a thinner header */
+  box-shadow: none;
 }
 
 .header__top-wrapper {
@@ -19,25 +20,27 @@
 
 .header__title {
   font-size: var(--fs-600);
-  font-weight: var(--fw-700);
+  font-weight: var(--fw-900);
   color: #fff;
   letter-spacing: 2px;
   text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
   transition: color 0.3s ease;
-}
-
-.header__title:hover {
-  color: #ff7e5f;
+  padding: 0; /* No padding to align with icons */
+  margin: 0; /* No margin to align with icons */
+  line-height: 1; /* Ensure text height is minimal */
 }
 
 .header__lg-nav {
-  display: flex; /* Show the large screen navigation */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center icons with the title */
+  padding: 0.2rem 0; /* Reduced padding for the navbar */
 }
 
 .header__ul {
   display: flex;
   align-items: center;
-  gap: 1rem; /* Adjust gap for thinner header */
+  gap: 1.2rem; /* Adjusted gap for better alignment */
   margin: 0;
   padding: 0;
   list-style: none;
@@ -55,13 +58,14 @@
   text-decoration: none;
   color: inherit;
   display: block;
-  transform: perspective(100px) rotateX(0deg) rotateY(0deg); /* 3D effect */
+  transform: perspective(100px) rotateX(0deg) rotateY(0deg);
   transition: transform 0.3s ease, color 0.3s ease;
+  line-height: 1; /* Ensure icon text height is minimal */
 }
 
 .header__link:hover {
   color: #ff7e5f;
-  transform: perspective(100px) rotateX(15deg) rotateY(15deg); /* Enhanced 3D effect on hover */
+  transform: perspective(100px) rotateX(15deg) rotateY(15deg);
 }
 
 .header__link::before {
@@ -92,7 +96,7 @@
 }
 
 .header__hamburger {
-  display: none; /* Hide the hamburger menu */
+  display: none;
 }
 
 .header__logo-link {

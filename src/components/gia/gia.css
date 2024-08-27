@@ -4,7 +4,7 @@
 }
 
 .gia__title {
-  font-size: var(--fs-400);
+  font-size: var(--fs-200);
   font-weight: var(--fw-700);
   color: #fff; /* Light text color for contrast */
   margin-bottom: 1rem;

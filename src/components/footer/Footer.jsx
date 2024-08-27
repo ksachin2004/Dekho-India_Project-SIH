@@ -3,10 +3,16 @@ import "./footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer | section-mg-top container">
+    <footer className="footer">
+      <section className="wave-container">
+        <div className="wave wave1"></div>
+        <div className="wave wave2"></div>
+        <div className="wave wave3"></div>
+        <div className="wave wave4"></div>
+      </section>
       <div className="footer__content">
         <div>
-          <h6 className="footer__title">Travel with us</h6>
+          <h4 className="footer__title">Travel with us</h4>
         </div>
         <div>
           <ul className="footer__ul">
@@ -33,7 +39,7 @@ const Footer = () => {
               <p className="footer__title">Visit For More</p>
             </li>
             <li className="footer__li">
-              <a href="#">My Goverment</a>
+              <a href="#">My Government</a>
             </li>
             <li className="footer__li">
               <a href="#">Digital India</a>

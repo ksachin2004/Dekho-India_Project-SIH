@@ -9,7 +9,7 @@ const Map = () => {
     <MapContainer center={position} zoom={5} style={{ height: '500px', width: '100%' }}>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        attribution='&copy; <a href="https://www.google.com/maps/preview?ie=UTF8#!data=!1m4!1m3!1d2020!2d74.995161!3d13.2164639">OpenStreetMap</a> contributors'
       />
       <Marker position={position}>
         <Popup>India</Popup>

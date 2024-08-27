@@ -6,6 +6,7 @@ import ShowCase from "../../components/showCase/ShowCase";
 import GIA from "../../components/gia/GIA";
 import Blogs from "../../components/blogs/Blogs";
 import Footer from "../../components/footer/Footer";
+import Map from "../../components/Map/Map";
 import "./home.css";
 
 const Home = () => {
@@ -32,14 +33,7 @@ const Home = () => {
         </section>
 
         <section className="map | section-mg-top container">
-          <iframe
-            src="https://www.google.com/maps/embed/v1/place?q=Heritage+Sites+in+India&key=YOUR_API_KEY"
-            width="100%"
-            height="600"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-          ></iframe>
+         <Map />
         </section>
 
         <CTA />
