@@ -53,6 +53,17 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <div className="footer__team">
+        <h1 className="footer__title">Developed By : Syntax Saviors</h1> 
+        <span>&spades;Haris Ul Islam       </span>
+        <span>&spades;Vansh Bhat       </span>
+        <span>&spades;Sachin Khandekar       </span>
+        <span>&spades;Ranveer Arakhrao       </span>
+        <span>&spades;Anam Khanzada      </span>
+        <span>&spades;Maithli Talegaonkar      </span>
+
+        
+      </div>
     </footer>
   );
 };

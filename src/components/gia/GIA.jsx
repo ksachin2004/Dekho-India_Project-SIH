@@ -32,6 +32,27 @@ const GIA = () => {
             <p className="gia__description">Silicon Valley of India</p>
           </figcaption>
         </figure>
+        <figure className="gia__figure">
+          <img className="gia__img" src="./mumbai.jpg" alt="Mumbai" />
+          <figcaption className="gia__caption">
+            <h6 className="gia__title">Chennai</h6>
+            <p className="gia__description">The City of Temples</p>
+          </figcaption>
+        </figure>
+        <figure className="gia__figure">
+          <img className="gia__img" src="./lucknow.jpg" alt="Lucknow" />
+          <figcaption className="gia__caption">
+            <h6 className="gia__title">Lucknow</h6>
+            <p className="gia__description">The City of Nawabs</p>
+          </figcaption>
+        </figure>
+        <figure className="gia__figure">
+          <img className="gia__img" src="./hyderabad.jpg" alt="Hyderabad" />
+          <figcaption className="gia__caption">
+            <h6 className="gia__title">Hyderabad</h6>
+            <p className="gia__description">The City of Pearls</p>
+          </figcaption>
+        </figure>
       </div>
     </section>
   );

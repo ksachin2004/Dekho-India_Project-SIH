@@ -102,3 +102,19 @@
 .header__logo-link {
   text-decoration: none;
 }
+.typewrite > .wrap {
+  border-right: 0.08em solid #fff; /* Cursor effect */
+}
+
+.header .typewrite {
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff; }
+}

@@ -47,13 +47,14 @@ html {
 html,
 body {
   height: 100%;
+
 }
 
 body {
   font-family: var(--ff-prime);
   font-size: var(--fs-100);
   color: #fff;
-  background-color: #000; /* Black background */
+  background-color: #000000; /* Black background */
 }
 
 img,
