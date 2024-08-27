@@ -1,0 +1,77 @@
+:root {
+  /* font family */
+  --ff-prime: "Poppins", system-ui;
+
+  /* font sizes */
+  --fs-100: 1rem;
+  --fs-150: 1.2rem;
+  --fs-200: 1.5rem;
+  --fs-300: 2rem;
+  --fs-400: 2.5rem;
+  --fs-500: 3rem;
+  --fs-600: 4rem;
+  --fs-700: 5rem;
+  --fs-800: 6rem;
+  --fs-900: 7rem;
+
+  /* font weights */
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: var(--ff-prime);
+  font-size: var(--fs-100);
+  color: #fff;
+  background-color: #000; /* Black background */
+}
+
+img,
+svg,
+picture,
+canvas,
+video {
+  max-width: 100%;
+  display: block;
+  border: none; /* Remove any borders from images and videos */
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}

@@ -1,0 +1,94 @@
+/* Define keyframes for button hover animation */
+@keyframes btnHover {
+  from {
+    transform: scale(1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  to {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Button container styles */
+.show__btn-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem; /* Added margin for spacing */
+}
+
+/* Button styles */
+.show__btn {
+  font-size: var(--fs-100);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(45deg, #ff6f61, #ffcc00); /* Gradient background */
+  color: #ffffff; /* White text color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.show__btn:hover,
+.show__btn:focus {
+  background-color: #ff6f61; /* Darker shade on hover */
+  animation: btnHover 0.3s forwards; /* Hover animation */
+}
+
+/* Image container styles */
+.show__img-container {
+  margin-top: 2rem;
+  display: grid;
+  justify-content: center;
+  gap: 1rem;
+  animation: fadeIn 1.5s ease-in-out; /* Fade-in animation */
+}
+
+/* Image wrapper styles */
+.show__img-wrapper {
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 12px; /* Rounded corners */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.show__img-wrapper:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+/* Image styles */
+.show__img {
+  width: 250px;
+  aspect-ratio: 1 / 1;
+  transition: transform 0.3s ease; /* Smooth zoom effect */
+}
+
+/* Responsive styles */
+@media (min-width: 640px) {
+  .show__img-container {
+    grid-template-columns: repeat(2, 250px);
+  }
+}
+
+@media (min-width: 768px) {
+  /* Add additional styles for medium screens if needed */
+}
+
+@media (min-width: 1024px) {
+  .show__img-container {
+    grid-template-columns: repeat(3, 250px);
+  }
+}
+
+@media (min-width: 1280px) {
+  /* Add additional styles for extra large screens if needed */
+}
+
+@media (min-width: 1440px) {
+  .show__img-container {
+    grid-template-columns: repeat(4, 250px);
+  }
+}

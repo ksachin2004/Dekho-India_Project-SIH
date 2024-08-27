@@ -1,0 +1,119 @@
+.gia__head-wrapper {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.gia__title {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-700);
+  color: #fff; /* Light text color for contrast */
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.gia__title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: #ff7e5f; /* Accent color for underline */
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+  transition: transform 0.3s ease;
+}
+
+.gia__title:hover::after {
+  transform: translateX(-50%) scaleX(1.2);
+}
+
+.gia__description {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-400);
+  color: #ddd; /* Slightly lighter text for description */
+  max-width: 60ch;
+  margin: 0 auto;
+}
+
+.gia__img-wrapper {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.gia__figure {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  border-radius: 15px; /* Rounded corners for figures */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gia__figure:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.6);
+}
+
+.gia__img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.gia__figure:hover .gia__img {
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.gia__caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #fff; /* Light text color for captions */
+  font-size: var(--fs-150);
+  font-weight: var(--fw-600);
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  padding: 0.5rem;
+  border-radius: 8px; /* Rounded corners for caption background */
+}
+
+/* Sm */
+@media (min-width: 640px) {
+  .gia__img-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Md */
+@media (min-width: 768px) {
+  .gia__img-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Lg */
+@media (min-width: 1024px) {
+  .gia__img-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Xl */
+@media (min-width: 1280px) {
+  .gia__img-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* 2Xl */
+@media (min-width: 1440px) {
+  .gia__img-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

@@ -1,0 +1,100 @@
+.header {
+  background-color: rgba(0, 0, 0, 0.8); /* Slightly transparent to merge with video */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem; /* Make header thinner */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+.header__top-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-700);
+  color: #fff;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8), 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: color 0.3s ease;
+}
+
+.header__title:hover {
+  color: #ff7e5f;
+}
+
+.header__lg-nav {
+  display: flex; /* Show the large screen navigation */
+}
+
+.header__ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Adjust gap for thinner header */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header__li {
+  font-size: var(--fs-200);
+  font-weight: var(--fw-600);
+  color: #fff;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.header__link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transform: perspective(100px) rotateX(0deg) rotateY(0deg); /* 3D effect */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.header__link:hover {
+  color: #ff7e5f;
+  transform: perspective(100px) rotateX(15deg) rotateY(15deg); /* Enhanced 3D effect on hover */
+}
+
+.header__link::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  border-radius: 20px;
+  bottom: -4px;
+  left: 0;
+  background-color: #ff7e5f;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.header__link:hover::before {
+  width: 100%;
+}
+
+.header__btn {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__hamburger {
+  display: none; /* Hide the hamburger menu */
+}
+
+.header__logo-link {
+  text-decoration: none;
+}

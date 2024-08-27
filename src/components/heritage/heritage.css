@@ -1,0 +1,70 @@
+/* heritage.css */
+.heritage {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.heritage__head-wrapper {
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent background */
+  padding: 1rem;
+  border-radius: 8px; /* Adjusted to be less round if needed */
+}
+
+.cta__title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out forwards;
+}
+
+.cta__description {
+  font-size: 1.2rem;
+  opacity: 0;
+  animation: fadeIn 3s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+.heritage__interactive-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center; /* Center items if needed */
+}
+
+.heritage__interactive-item {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px; /* Ensure a consistent width for each item */
+  text-align: center; /* Center align text inside the item */
+}
+
+.heritage__interactive-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.interactive-item-title {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.interactive-item-description {
+  font-size: 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
